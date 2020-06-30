@@ -1,0 +1,413 @@
+/*======================================
+
+        Default Values
+
+Fonts: Roboto(paragraphs), Calistoga (headings)
+
+Colors:
+1. #946846
+2. #111414
+3. #D4DFC7
+4. #177E89
+
+======================================*/
+
+
+
+/*------------------------------
+        Basic setup
+------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #111414;
+    text-rendering: optimizeLegibility;
+}
+
+body p {
+    font-family: 'Roboto', sans-serif;
+}
+
+body h1,
+body h2,
+body h3,
+body h4 {
+    font-family: 'Calistoga', cursive;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+
+
+/*------------------------------
+            Header
+------------------------------*/
+header {
+    width: 100%;
+    background-color: #111414;
+    color:#d4dfc7;
+}
+
+.heading-div {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px
+}
+
+.heading-div h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.nav-menu a {
+    color:#d4dfc7;
+    padding:30px;
+    font-size: 21px;
+}
+
+.nav-menu a:hover {
+    background-color: #177E89;
+    color: #111414;
+    transition: background-color .3s ease-in-out;
+}
+
+
+
+/*------------------------------
+        Header-section
+------------------------------*/
+.header-section {
+    height:60vh;
+    width:100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#d4dfc7;    
+}
+
+.header-section h2 {
+    font-size: 65px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.header-section p {
+    font-size: 25px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+
+
+/*------------------------------
+        Personal info
+------------------------------*/
+.personal-info {
+    text-align: center;
+    margin-top:70px;
+
+}
+
+.personal-info img {
+    border: 4px solid #946846;
+    filter: grayscale(100%)
+}
+
+.personal-info img:hover {
+    filter:none;
+    border-radius: 50%;
+    transition: all .3s linear;
+}
+
+.personal-info h2 {
+    margin-top:30px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.personal-info h3 {
+    margin-top: 40px;
+    font-size:35px;
+    color: #946846;
+}
+
+.personal-info p {
+    max-width: 1400px;
+    margin: 15px auto;
+    color:#111414;
+    font-size:19px;
+}
+
+
+
+/*------------------------------
+          Abilities
+------------------------------*/
+.abilities {
+    display:  flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 120px auto;
+}
+
+.ability {
+    margin-right: 45px;
+}
+
+.ability:last-child {
+    margin: 0;
+}
+
+.ability i {
+    color: #946846;
+    font-size: 80px;
+}
+
+.ability h3 {
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+.ability p {
+    margin-top: 40px;
+}
+
+
+
+/*------------------------------
+            Works
+------------------------------*/
+.works {
+    background-color: #111414;
+    width: 100%;
+    text-align: center;
+    color: #d4dfc7;
+    padding: 80px 0;
+}
+
+.works h2 {
+    padding-bottom: 50px;
+    font-size: 40px;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+.works-gallery {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.works-gallery img {
+    width: 32%;
+    margin: 1% 0;
+}
+
+
+
+/*------------------------------
+            Contact
+------------------------------*/
+.contact {
+    background-color: #177E89;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.contact h2 {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #d4dfc7;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+.contact form {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%;
+    margin: 15px auto;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #d4dfc7;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    background-color: #fff;
+    color: #111414;
+}
+
+form .button {
+	background-color: #177e89;
+	color: #d4dfc7;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	margin-top: 10px;
+	cursor: pointer;
+    transition: all .2s;
+    border-radius: 10px;
+    border: 2px solid #d4dfc7;
+    font-size: 20px;
+}
+
+form .button:hover {
+	background-color: #d4dfc7;
+	color: #177e89;
+    transform: scale(0.97);
+}
+
+
+
+/*------------------------------
+            Footer
+------------------------------*/
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111414;
+    color: #d4dfc7;
+}
+
+@media all and (max-width:991px){
+    .heading-div h1 {
+        font-size: 25px;
+    }
+    
+    .nav-menu a {
+        font-size: 16px;
+        padding: 27px 10px
+    }
+    
+    .header-section h2 {
+        font-size: 35px;
+    }
+    
+    .header-section p {
+        font-size: 16px;
+    }
+    
+    .personal-info img {
+        width: 30%;
+    }
+    
+    .personal-info h2 {
+        font-size: 30px;
+    }
+    
+    .personal-info h3 {
+        font-size: 25px;
+    }
+    
+    .personal-info p {
+        font-size: 16px;
+        max-width: 700px;
+    }
+    
+    .abilities { 
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+    
+    .ability {
+        margin-right: 0;
+    }
+    
+    .ability i {
+        font-size: 50px;
+        margin-top: 40px;
+    }
+    
+    .ability p {
+        margin-top: 15px;
+    }
+    
+    .works h2 {
+        font-size: 30px;
+    }
+    
+    .works-gallery  {
+        justify-content: space-around;
+    }
+    
+    .contact h2 {
+        font-size: 30px;
+    }
+    
+    form .button {
+        font-size: 16px;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    .works-gallery img {
+        width: 48%;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .heading-div {
+        flex-direction: column;
+    }
+    
+    .nav-menu {
+        margin-top: 25px;
+    }
+    
+    .nav-menu a {
+        padding: 21px 10px
+    }
+    
+    .works-gallery img {
+        width: 80%;
+        margin-top:10px;
+    }
+    .contact input, 
+    .contact textarea {
+    width: 80%;
+    }    
+}
